@@ -1,0 +1,5 @@
+tier,corridors,predictions,baseline_MAE,xgb_MAE,MAE_reduction%,baseline_MAPE,xgb_MAPE,baseline_cov30%,xgb_cov30%
+dense,23,598,408.6,335.5,17.9,19.4,12.6,83.1,92.5
+medium,28,728,53.5,41.9,21.6,18.9,13.9,83.9,89.7
+sparse,132,3432,8.1,7.4,9.4,24.4,22.5,75.4,77.9
+ALL,183,4758,65.4,53.9,17.6,22.9,20.0,77.7,81.5

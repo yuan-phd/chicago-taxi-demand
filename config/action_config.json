@@ -1,0 +1,45 @@
+{
+  "company_profile": {
+    "fleet_size": 150,
+    "cost_per_car_day": 200,
+    "avg_fare": 13.91,
+    "avg_airport_fare": 46.0,
+    "target_market_share": 0.05
+  },
+  "action_types": {
+    "DEMAND_DROP": {
+      "description": "Extreme holiday — pure fleet reduction",
+      "trigger_condition": "holiday_factor < extreme_threshold",
+      "extreme_threshold": 0.3,
+      "max_reduction_pct": 0.75
+    },
+    "RESOURCE_OPTIMIZE": {
+      "description": "Moderate holiday — redirect idle fleet to airport premium",
+      "trigger_condition": "extreme_threshold <= holiday_factor < holiday_threshold",
+      "holiday_threshold": 0.7,
+      "airport_redirect_pct": 0.30,
+      "airport_trips_per_car_day": 5
+    },
+    "DEMAND_SURGE": {
+      "description": "Convention boost — add temporary capacity",
+      "trigger_condition": "convention_factor > surge_threshold AND attendees > min_attendees",
+      "surge_threshold": 1.10,
+      "min_attendees": 30000,
+      "trips_per_temp_car_day": 10
+    },
+    "COMPETITIVE_SHIFT": {
+      "description": "Mode-share trend — capture competitive opportunity",
+      "trigger_condition": "Trailing 4-week taxi share change > 0.5pp"
+    },
+    "GROWTH_THRESHOLD": {
+      "description": "Sustained corridor demand — evaluate expansion",
+      "trigger_condition": "Corridor trips > threshold for N consecutive weeks",
+      "consecutive_weeks_required": 4
+    },
+    "ANOMALY_ESCALATION": {
+      "description": "Unexplained forecast error — escalate to analyst",
+      "trigger_condition": "abs(error) > error_threshold AND no validated cause",
+      "error_threshold_pct": 10
+    }
+  }
+}

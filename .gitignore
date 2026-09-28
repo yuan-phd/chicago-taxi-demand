@@ -1,0 +1,28 @@
+# Large raw data
+*.gz
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+data/from_assignment/raw/
+
+# Large generated/fetched data — regenerate via scripts/0_*.py or copy from source machine
+data/external/*
+!data/external/.gitkeep
+data/derived/*
+!data/derived/.gitkeep
+
+.env
+lightning_logs/
+

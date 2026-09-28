@@ -1,0 +1,493 @@
+[
+  {
+    "week": "2025-W49",
+    "label": "DEMAND_SURGE \u2014 RSNA convention",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 49,
+      "actual_trips": 39749,
+      "forecast_trips": 35250,
+      "error_pct": 11.3,
+      "direction": "under-forecast",
+      "is_anomaly": true
+    },
+    "events": {
+      "year": 2025,
+      "week": 49,
+      "events": [
+        {
+          "type": "convention",
+          "name": "RSNA Annual Meeting",
+          "dates": "2025-11-30 to 2025-12-04",
+          "overlap_days": 4,
+          "est_attendees": 50000,
+          "factor": 1.179,
+          "impact_pct": "+18%",
+          "source": "Phase 3 validated"
+        }
+      ],
+      "n_events": 1
+    },
+    "news": {
+      "query": "Chicago RSNA Annual Meeting travel demand",
+      "year": 2025,
+      "week": 49,
+      "articles": [
+        {
+          "title": "Chicago CTA holding meeting for feedback on bus corridors",
+          "source": "abc7chicago.com",
+          "date": "2025-12-08",
+          "tone": 4.7,
+          "relevance_score": 0.533,
+          "url": "https://abc7chicago.com/post/cta-holding-meeting-bus-corridors/18263256/"
+        },
+        {
+          "title": "Chicago Christkindlmarket 2025 to address capacity, crowd management concerns",
+          "source": "abc7chicago.com",
+          "date": "2025-11-28",
+          "tone": 2.6,
+          "relevance_score": 0.492,
+          "url": "https://abc7chicago.com/post/chicago-christkindlmarket-2025-address-capacity-crowd-management-concerns/18221837/"
+        }
+      ],
+      "n_found": 2
+    },
+    "action": {
+      "action_type": "DEMAND_SURGE",
+      "headline": "Maximize existing fleet during RSNA Annual Meeting \u2014 adding cars not profitable",
+      "expected_line": "Expected: ~36,496 for the week vs ~30,955 typical (+18%, RSNA, 50,000 attendees)",
+      "trigger": "RSNA Annual Meeting (factor 1.179, +18%, 50,000 attendees)",
+      "what_to_do": [
+        "Do NOT add temporary cars \u2014 break-even requires 14 trips/car/day at $13.91 avg fare",
+        "Maximize utilization of existing 150 cars during convention hours",
+        "Extend shift hours to capture convention-driven evening demand",
+        "Deploy near McCormick Place / NNS hotels during convention days"
+      ],
+      "revenue_impact": {
+        "analysis": "Adding 27 temp cars would cost $5,400/day but generate only $3,756/day",
+        "net_loss_avoided": "$6,577 loss avoided over 4 days",
+        "recommendation": "Capture surge with existing fleet \u2014 zero marginal cost"
+      },
+      "evidence": "RSNA Annual Meeting factor 1.179 (+18%). Assumed 10 trips/car/day; breakeven is 14. Conclusion robust unless temp cars exceed 14 trips/day \u2014 implausible at +18% surge. Model validation: 39,749 actual vs 35,250 predicted (+11.3%).",
+      "confidence": "HIGH \u2014 math-based rejection",
+      "requires_approval": false
+    },
+    "latency_s": 2.877
+  },
+  {
+    "week": "2025-W48",
+    "label": "RESOURCE_OPTIMIZE \u2014 Thanksgiving + airport",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 48,
+      "actual_trips": 23204,
+      "forecast_trips": 22036,
+      "error_pct": 5.0,
+      "direction": "under-forecast",
+      "is_anomaly": false
+    },
+    "events": {
+      "year": 2025,
+      "week": 48,
+      "events": [
+        {
+          "type": "holiday",
+          "name": "Pre-Thanksgiving Tue",
+          "date": "2025-11-25",
+          "category": "demand_pattern",
+          "expected_impact": "negative",
+          "factor": null,
+          "impact_pct": "unknown",
+          "source": "unvalidated"
+        },
+        {
+          "type": "holiday",
+          "name": "Pre-Thanksgiving Wed",
+          "date": "2025-11-26",
+          "category": "demand_pattern",
+          "expected_impact": "negative",
+          "factor": null,
+          "impact_pct": "unknown",
+          "source": "unvalidated"
+        },
+        {
+          "type": "holiday",
+          "name": "Thanksgiving",
+          "date": "2025-11-27",
+          "category": "us_federal",
+          "expected_impact": "negative",
+          "factor": 0.39,
+          "impact_pct": "-61%",
+          "source": "Phase 3 validated"
+        },
+        {
+          "type": "holiday",
+          "name": "Black Friday",
+          "date": "2025-11-28",
+          "category": "us_commercial",
+          "expected_impact": "negative",
+          "factor": 0.639,
+          "impact_pct": "-36%",
+          "source": "Phase 3 validated"
+        },
+        {
+          "type": "holiday",
+          "name": "Thanksgiving Weekend",
+          "date": "2025-11-29",
+          "category": "us_commercial",
+          "expected_impact": "negative",
+          "factor": null,
+          "impact_pct": "unknown",
+          "source": "unvalidated"
+        },
+        {
+          "type": "convention",
+          "name": "RSNA Annual Meeting",
+          "dates": "2025-11-30 to 2025-12-04",
+          "overlap_days": 1,
+          "est_attendees": 50000,
+          "factor": 1.179,
+          "impact_pct": "+18%",
+          "source": "Phase 3 validated"
+        }
+      ],
+      "n_events": 6
+    },
+    "news": {
+      "query": "Chicago Thanksgiving Black Friday RSNA Annual Meeting travel demand",
+      "year": 2025,
+      "week": 48,
+      "articles": [
+        {
+          "title": "Thousands receive holiday meals at Chicago community giveaways",
+          "source": "nbcchicago.com",
+          "date": "2025-11-23",
+          "tone": 3.3,
+          "relevance_score": 0.536,
+          "url": "https://www.nbcchicago.com/news/local/thousands-receive-holiday-meals-at-chicago-community-giveaways/3854784/"
+        },
+        {
+          "title": "Thanksgiving travel expected to set new record, AAA predicts &#x2013; NBC Chicago",
+          "source": "nbcchicago.com",
+          "date": "2025-11-17",
+          "tone": 1.9,
+          "relevance_score": 0.534,
+          "url": "https://www.nbcchicago.com/news/national-international/thanksgiving-travel-record-projections-2025/3852306/"
+        },
+        {
+          "title": "70 Thanksgiving restaurant specials in Chicago for 2025",
+          "source": "chicagotribune.com",
+          "date": "2025-11-17",
+          "tone": -0.6,
+          "relevance_score": 0.524,
+          "url": "https://www.chicagotribune.com/2025/11/17/thanksgiving-restaurant-specials-2025/"
+        }
+      ],
+      "n_found": 3
+    },
+    "action": {
+      "action_type": "RESOURCE_OPTIMIZE",
+      "headline": "Redirect 28 idle cars to airport premium routes ($46.0 avg fare)",
+      "expected_line": "Thanksgiving \u221261% (Nov 27) + RSNA +18% overlap \u2192 redirect idle capacity to airport premium. Expected on Nov 27: ~1,725 vs ~4,422 typical day",
+      "trigger": "Thanksgiving (factor 0.39, -61%) + airport corridor available",
+      "what_to_do": [
+        "Reduce fleet from 150 to 58 cars (61% reduction)",
+        "Redirect 28 cars (30% of idle) to airport dispatch",
+        "Park remaining 64 idle cars",
+        "Airport fare: $46.0 avg vs $13.91 standard (3.3x premium)"
+      ],
+      "revenue_impact": {
+        "airport_revenue": "$6,440/day (28 \u00d7 5 trips \u00d7 $46.0)",
+        "idle_saving": "$12,800/day (64 parked \u00d7 $200)",
+        "total_daily_benefit": "$19,240/day",
+        "vs_no_action": "Without action: 92 cars idle at $200/day = $18,400/day wasted"
+      },
+      "evidence": "Thanksgiving factor 0.39 (-61%). Assumed 5 airport legs/car/day (~2hr cycle: 39-min trip + empty return, pickups permit-gated); breakeven 4.3 legs/day. Airport fare $46.0 vs $13.91 standard (Phase 5: 5.8% of NNS trips = 19% of revenue). Model validation: 23,204 actual vs 22,036 predicted (+5.0%).",
+      "confidence": "HIGH",
+      "requires_approval": true
+    },
+    "latency_s": 0.382
+  },
+  {
+    "week": "2025-W52",
+    "label": "DEMAND_DROP \u2014 Christmas",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 52,
+      "actual_trips": 20374,
+      "forecast_trips": 17850,
+      "error_pct": 12.4,
+      "direction": "under-forecast",
+      "is_anomaly": true
+    },
+    "events": {
+      "year": 2025,
+      "week": 52,
+      "events": [
+        {
+          "type": "holiday",
+          "name": "Christmas Eve",
+          "date": "2025-12-24",
+          "category": "us_commercial",
+          "expected_impact": "negative",
+          "factor": 0.628,
+          "impact_pct": "-37%",
+          "source": "Phase 3 validated"
+        },
+        {
+          "type": "holiday",
+          "name": "Christmas",
+          "date": "2025-12-25",
+          "category": "us_federal",
+          "expected_impact": "negative",
+          "factor": 0.254,
+          "impact_pct": "-75%",
+          "source": "Phase 3 validated"
+        },
+        {
+          "type": "holiday",
+          "name": "Day After Christmas",
+          "date": "2025-12-26",
+          "category": "us_commercial",
+          "expected_impact": "negative",
+          "factor": 0.482,
+          "impact_pct": "-52%",
+          "source": "Phase 3 validated"
+        }
+      ],
+      "n_events": 3
+    },
+    "news": {
+      "query": "Chicago Christmas Eve Christmas Day After Christmas travel demand",
+      "year": 2025,
+      "week": 52,
+      "articles": [
+        {
+          "title": "Chicago weather: Great travel weather ahead of warm Christmas",
+          "source": "fox32chicago.com",
+          "date": "2025-12-20",
+          "tone": 3.8,
+          "relevance_score": 0.764,
+          "url": "https://www.fox32chicago.com/weather/chicago-weather-great-travel-weather-ahead-warm-christmas"
+        },
+        {
+          "title": "Chicago holiday travelers: Thousands of travelers going through O'Hare, Midway airports, roads as Christmas travel rush begins",
+          "source": "abc7chicago.com",
+          "date": "2025-12-22",
+          "tone": -0.6,
+          "relevance_score": 0.718,
+          "url": "https://abc7chicago.com/post/chicago-holiday-travelers-thousands-going-ohare-midway-airports-roads-christmas-travel-rush-begins/18305090/"
+        },
+        {
+          "title": "Chicago weather: Your Christmas Eve forecast",
+          "source": "fox32chicago.com",
+          "date": "2025-12-24",
+          "tone": -1.3,
+          "relevance_score": 0.716,
+          "url": "https://www.fox32chicago.com/weather/chicago-weather-christmas-eve-forecast"
+        }
+      ],
+      "n_found": 3
+    },
+    "action": {
+      "action_type": "DEMAND_DROP",
+      "headline": "Park 112 of 150 cars \u2014 Christmas reduces demand 75%",
+      "expected_line": "Expected on Dec 25: ~1,310 vs ~5,159 typical day (\u221275%, Christmas factor)",
+      "trigger": "Christmas (factor 0.254, -75%)",
+      "what_to_do": [
+        "Reduce fleet from 150 to 38 cars (75% reduction)",
+        "Park 112 cars for the holiday period",
+        "Schedule full fleet redeployment for post-holiday recovery"
+      ],
+      "revenue_impact": {
+        "daily_saving": "$22,400",
+        "calculation": "112 parked \u00d7 $200/car/day",
+        "period": "2025-12-25"
+      },
+      "evidence": "Christmas factor 0.254 (-75%). Phase 3 validated. Cross-year consistent direction. Model validation: 20,374 actual vs 17,850 predicted (+12.4%).",
+      "confidence": "HIGH",
+      "requires_approval": true
+    },
+    "latency_s": 1.02
+  },
+  {
+    "week": "2025-W42",
+    "label": "GROWTH_THRESHOLD \u2014 NNS\u2192Loop corridor",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 42,
+      "actual_trips": 35439,
+      "forecast_trips": 36283,
+      "error_pct": -2.4,
+      "direction": "over-forecast",
+      "is_anomaly": false
+    },
+    "events": {
+      "year": 2025,
+      "week": 42,
+      "events": [
+        {
+          "type": "holiday",
+          "name": "Columbus Day",
+          "date": "2025-10-13",
+          "category": "us_federal",
+          "expected_impact": "neutral",
+          "factor": null,
+          "impact_pct": "unknown",
+          "source": "unvalidated"
+        }
+      ],
+      "n_events": 1
+    },
+    "news": {
+      "query": "Chicago travel demand",
+      "year": 2025,
+      "week": 42,
+      "articles": [
+        {
+          "title": "Opinion: Why is Chicago taxing business away?",
+          "source": "chicagotribune.com",
+          "date": "2025-10-22",
+          "tone": -1.4,
+          "relevance_score": 0.598,
+          "url": "https://www.chicagotribune.com/2025/10/22/opinion-mcdonalds-chicago-corporate-head-tax/"
+        }
+      ],
+      "n_found": 1
+    },
+    "action": {
+      "action_type": "GROWTH_THRESHOLD",
+      "headline": "NNS\u2192Loop sustained demand \u2014 expansion NOT recommended",
+      "expected_line": "Corridor demand above threshold 4 consecutive weeks (NNS\u2192Loop, 20% of NNS trips)",
+      "trigger": "NNS\u2192Loop (20% of NNS trips) above threshold for 4 consecutive weeks",
+      "what_to_do": [
+        "Do NOT deploy dedicated fleet to Loop",
+        "Volume: 282 trips/week vs 840 breakeven \u2014 insufficient for dedicated deployment",
+        "Revenue/hr: $55.7/occupied-hr (NNS\u2192Loop) vs $86.8/occupied-hr (NNS internal) \u2014 even dispatching existing fleet is inferior",
+        "Maintain corridor watchlist \u2014 revisit if volume doubles"
+      ],
+      "revenue_impact": {
+        "expansion_rejected": "282 trips/wk \u226a 840 breakeven",
+        "opportunity_cost": "$86.8/hr internal vs $55.7/hr Loop"
+      },
+      "evidence": "NNS\u2192Loop avg fare $8.42 / 544s = $55.7/occupied-hr. NNS internal $8.85 / 367s = $86.8/occupied-hr. Loop\u2192NNS return exists (849 trips/day) but round-trip still inferior. Model validation: 35,439 actual vs 36,283 predicted (-2.4%).",
+      "confidence": "HIGH \u2014 based on actual corridor economics from Phase 5",
+      "requires_approval": false
+    },
+    "latency_s": 0.985
+  },
+  {
+    "week": "2025-W37",
+    "label": "COMPETITIVE_SHIFT \u2014 mode share trend",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 37,
+      "actual_trips": 31718,
+      "forecast_trips": 31793,
+      "error_pct": -0.2,
+      "direction": "over-forecast",
+      "is_anomaly": false
+    },
+    "events": {
+      "year": 2025,
+      "week": 37,
+      "events": [],
+      "n_events": 0
+    },
+    "news": {
+      "query": "Chicago travel demand",
+      "year": 2025,
+      "week": 37,
+      "articles": [],
+      "n_found": 0
+    },
+    "action": {
+      "action_type": "COMPETITIVE_SHIFT",
+      "headline": "Mode-share momentum \u2014 capture ride-hail surge hours",
+      "expected_line": "Taxi share 9.8% \u2192 11.8% over 2.5 years; ride-hail flat-to-declining",
+      "trigger": "Taxi share trend: 9.8% \u2192 11.8% over 2.5 years (+2.0pp)",
+      "what_to_do": [
+        "Competitive pricing during ride-hail surge hours (Fri-Sat 22:00-02:00 ride-hail charges $18-25 (illustrative), taxi $13.91)",
+        "Target Fri-Sat 22:00-02:00 when ride-hail prices peak",
+        "Capture estimated 100 additional trips/week at zero fleet cost"
+      ],
+      "revenue_impact": {
+        "weekly_gain": "$1,391/week (100 trips \u00d7 $13.91)",
+        "annual_gain": "$72,332/year",
+        "fleet_cost": "$0 \u2014 use existing idle night-shift capacity"
+      },
+      "evidence": "Phase 6: taxi growth +12.9%, ride-hail +0.9%, total +2.1%. Total demand flat \u2014 taxi growth is share capture. Taxi share: 9.8% \u2192 11.8% over 2.5 years (+2.0pp). Model validation: 31,718 actual vs 31,793 predicted (-0.2%).",
+      "confidence": "Trend: HIGH (2.5 years data). Capture estimate: ASSUMPTION (100 trips/week unvalidated)",
+      "requires_approval": true
+    },
+    "latency_s": 0.015
+  },
+  {
+    "week": "2025-W40",
+    "label": "ANOMALY_ESCALATION \u2014 unexplained error",
+    "forecast": {
+      "area": 8,
+      "area_name": "Near North Side",
+      "year": 2025,
+      "week": 40,
+      "actual_trips": 34272,
+      "forecast_trips": 28757,
+      "error_pct": 16.1,
+      "direction": "under-forecast",
+      "is_anomaly": true
+    },
+    "events": {
+      "year": 2025,
+      "week": 40,
+      "events": [
+        {
+          "type": "holiday",
+          "name": "Yom Kippur",
+          "date": "2025-10-01",
+          "category": "jewish",
+          "expected_impact": "negative",
+          "factor": null,
+          "impact_pct": "unknown",
+          "source": "unvalidated"
+        }
+      ],
+      "n_events": 1
+    },
+    "news": {
+      "query": "Chicago travel demand",
+      "year": 2025,
+      "week": 40,
+      "articles": [],
+      "n_found": 0
+    },
+    "action": {
+      "action_type": "ANOMALY_ESCALATION",
+      "headline": "Forecast deviation +16.1% \u2014 no validated cause",
+      "expected_line": null,
+      "trigger": "W40 error +16.1% exceeds \u00b110% threshold",
+      "what_to_do": [
+        "Flag for analyst review",
+        "Check local conditions not in event calendar",
+        "Review whether trend model is systematically under-predicting Q4"
+      ],
+      "context": [
+        "Unvalidated events detected: Yom Kippur"
+      ],
+      "revenue_impact": "Unknown \u2014 requires investigation",
+      "evidence": "Forecast error +16.1% with no Phase 3 validated event. System escalates instead of guessing. Model validation: 34,272 actual vs 28,757 predicted (+16.1%).",
+      "confidence": "N/A \u2014 escalation, not recommendation",
+      "requires_approval": false
+    },
+    "latency_s": 0.014
+  }
+]

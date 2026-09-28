@@ -1,0 +1,12 @@
+# Chicago Demand Intelligence — direct project imports, pinned from the working env (Python 3.13).
+# Regenerate: pip freeze | grep -iE '<pkg>==' for the modules imported in app.py + scripts/.
+faiss-cpu==1.14.3
+numpy==2.4.4
+openai==2.32.0
+pandas==2.3.3
+plotly==6.7.0
+python-dotenv==1.2.2
+sentence-transformers==5.4.1
+streamlit==1.56.0
+torch==2.11.0
+xgboost==3.2.0

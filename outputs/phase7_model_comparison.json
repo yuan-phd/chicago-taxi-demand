@@ -1,0 +1,202 @@
+[
+  {
+    "model": "gpt-5.5",
+    "query": "comparison",
+    "run": 4,
+    "latency_s": 5.89,
+    "total_tokens": 1005,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "comparison",
+    "run": 0,
+    "latency_s": 4.25,
+    "total_tokens": 731,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "christmas",
+    "run": 4,
+    "latency_s": 9.5,
+    "total_tokens": 2419,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "christmas",
+    "run": 4,
+    "latency_s": 7.89,
+    "total_tokens": 1942,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "comparison",
+    "run": 4,
+    "latency_s": 3.18,
+    "total_tokens": 715,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "christmas",
+    "run": 3,
+    "latency_s": 9.92,
+    "total_tokens": 2436,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "comparison",
+    "run": 0,
+    "latency_s": 5.22,
+    "total_tokens": 970,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "comparison",
+    "run": 3,
+    "latency_s": 5.02,
+    "total_tokens": 993,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "comparison",
+    "run": 1,
+    "latency_s": 3.46,
+    "total_tokens": 754,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "christmas",
+    "run": 2,
+    "latency_s": 14.26,
+    "total_tokens": 2426,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "comparison",
+    "run": 2,
+    "latency_s": 5.53,
+    "total_tokens": 1043,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "christmas",
+    "run": 0,
+    "latency_s": 10.97,
+    "total_tokens": 2366,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "christmas",
+    "run": 1,
+    "latency_s": 6.81,
+    "total_tokens": 1912,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "christmas",
+    "run": 1,
+    "latency_s": 7.72,
+    "total_tokens": 2376,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "christmas",
+    "run": 2,
+    "latency_s": 10.66,
+    "total_tokens": 1988,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-5.5",
+    "query": "comparison",
+    "run": 1,
+    "latency_s": 5.01,
+    "total_tokens": 1021,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "comparison",
+    "run": 2,
+    "latency_s": 3.17,
+    "total_tokens": 737,
+    "n_tool_calls": 1,
+    "correct": false,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "comparison",
+    "run": 3,
+    "latency_s": 3.91,
+    "total_tokens": 765,
+    "n_tool_calls": 1,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "christmas",
+    "run": 0,
+    "latency_s": 7.91,
+    "total_tokens": 1947,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "query": "christmas",
+    "run": 3,
+    "latency_s": 7.36,
+    "total_tokens": 1937,
+    "n_tool_calls": 3,
+    "correct": true,
+    "exhausted": false
+  }
+]
