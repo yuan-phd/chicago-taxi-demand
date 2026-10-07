@@ -1,5 +1,5 @@
 model,granularity,weekly_mape,source,weekly_mae
-Trend × seasonal (weekly baseline),Weekly,6.01,Assignment,
+Trend × seasonal (weekly baseline),Weekly,6.01,Baseline,
 M1 (DOW×month×holiday factors),Daily→Weekly,6.95,Phase 3,
 naive_lag7,Daily→Weekly,11.8,This experiment,3335.0
 timesfm,Daily→Weekly,8.2,This experiment,2421.0

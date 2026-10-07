@@ -159,13 +159,13 @@ Forecasting total demand (MAPE 3.9%) is more accurate than taxi-only (6.3%). Pro
 
 **On DL:** "TimesFM zero-shot beats trained N-BEATS without seeing any data. Foundation models solve cold-start. Combined with the 4-week ramp-up finding, no route ever goes without a forecast."
 
-**On total market:** "The +30% taxi growth is mode-share shift, not real demand. Total demand is flat. O'Hare is the mirror. This is the kind of insight you only get by cross-referencing multiple data sources — which is your business model."
+**On total market:** "The +30% taxi growth is mode-share shift, not real demand. Total demand is flat. O'Hare is the mirror. This is the kind of insight you only get by cross-referencing multiple data sources."
 
 **On AI pipeline:** "Most agentic systems are expensive because they use LLMs for reasoning, and slow because each step waits for a response. We invert this: all reasoning is deterministic, LLM only routes and formats. 50-100x cheaper. The deterministic mode runs in under 100 milliseconds with zero API cost — two orders of magnitude faster than full-LLM approaches."
 
 **On actions:** "The system doesn't just explain — it recommends. And it checks the math: when adding cars loses money, it says so. When it can't explain an anomaly, it escalates instead of guessing. Every recommendation has a dollar amount and an evidence trail."
 
-**On methodology:** "I tested every plausible feature and rejected three. I ran four daily model variants and concluded they can't beat weekly at this density. Knowing what doesn't work — and stopping — is the Senior DS contribution."
+**On methodology:** "I tested every plausible feature and rejected three. I ran four daily model variants and concluded they can't beat weekly at this density. Knowing what doesn't work — and stopping — is part of the result."
 
 ---
 
@@ -177,7 +177,7 @@ chicago-demand-intelligence/
 ├── config/
 │   └── action_config.json          # Action types + company profile
 ├── data/
-│   ├── from_assignment/            # Assignment outputs
+│   ├── baseline/                   # Baseline weekly analysis outputs
 │   │   ├── area_week.csv
 │   │   ├── backtest_8.csv
 │   │   └── forecast_8.csv
@@ -242,10 +242,10 @@ chicago-demand-intelligence/
 
 | Item | Reason |
 |------|--------|
-| News-as-features experiment | Phase 3 proved features don't help dense single series. Same conclusion expected. Can state verbally. |
-| Weather/sports context signals | Rejected in Phase 2. Can mention manually during demo if relevant. |
+| News-as-features experiment | Phase 3 proved features don't help dense single series. Same conclusion expected. |
+| Weather/sports context signals | Rejected in Phase 2. Can be surfaced manually if relevant. |
 | LSTM | 124 weeks on one series — insufficient to beat classical. Dropped early. |
-| TFT (Temporal Fusion Transformer) | Insufficient data for multi-horizon training. Positioned as talking point: "With thousands of routes, TFT is the right next step." |
+| TFT (Temporal Fusion Transformer) | Insufficient data for multi-horizon training. With thousands of routes, TFT is the right next step. |
 | LangGraph / multi-agent orchestration | Pipeline is linear. Adding frameworks where functions suffice signals over-engineering. |
-| Live demo execution | Too risky for a live presentation. Pre-computed results in Streamlit. ReAct is live but scoped. |
+| Live demo execution | Too slow/fragile to run end-to-end interactively. Pre-computed results in Streamlit. ReAct is live but scoped. |
 | Mode 2 production (LLM routing to tools) | Architecture demonstrated in ReAct. "Same tools, different orchestrator." Not built as standalone product. |

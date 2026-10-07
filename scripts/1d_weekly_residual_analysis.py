@@ -8,8 +8,8 @@ Reproduces all weekly-level diagnostics:
   5. Model improvement experiments (cleaning + AR(1))
 
 Inputs:
-  data/from_assignment/area_week.csv
-  data/from_assignment/backtest_8.csv
+  data/baseline/area_week.csv
+  data/baseline/backtest_8.csv
 
 Usage: python scripts/1d_weekly_residual_analysis.py
 """
@@ -35,7 +35,7 @@ def iso_week_to_dates(year, week):
 
 def load_nns_weekly():
     rows = []
-    with open("data/from_assignment/area_week.csv") as f:
+    with open("data/baseline/area_week.csv") as f:
         for r in csv.DictReader(f):
             if int(r["pickup_community_area"]) == 8:
                 trips = int(r["trip_count"])
@@ -52,7 +52,7 @@ def load_nns_weekly():
 
 def load_backtest():
     rows = []
-    with open("data/from_assignment/backtest_8.csv") as f:
+    with open("data/baseline/backtest_8.csv") as f:
         for r in csv.DictReader(f):
             if not r["iso_week"].strip():
                 continue
@@ -66,7 +66,7 @@ def load_backtest():
 
 def load_all_areas():
     rows = []
-    with open("data/from_assignment/area_week.csv") as f:
+    with open("data/baseline/area_week.csv") as f:
         for r in csv.DictReader(f):
             trips = int(r["trip_count"])
             if trips < 100:

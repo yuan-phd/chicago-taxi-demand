@@ -64,7 +64,7 @@ TimesFM provides immediate forecasts for new routes with zero training. After 4 
 This benchmark demonstrates:
 1. Practical DL implementation (TimesFM, N-BEATS)
 2. Rigorous evaluation methodology (rolling cross-validation, same holdout period)
-3. Correct conclusion: knowing when DL is NOT the right tool is Senior DS judgment
+3. Correct conclusion: knowing when DL is NOT the right tool is itself a finding
 4. Identifying where DL IS the right tool: cold-start and cross-series scenarios
 
 ---

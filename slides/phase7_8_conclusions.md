@@ -47,7 +47,7 @@ Three anomaly weeks demonstrated:
 - **Events detected:** None (Christmas is W52, not W51)
 - **News retrieved:** 2 articles — holiday travel surge coverage from ABC7 Chicago
 - **Actions:** `investigate: manual_review`
-- **Design note:** Layer 2 (NLP) fills the gap that Layer 1 (rules) misses. No holiday in the factor table, but FAISS retrieves relevant news about the pre-Christmas travel surge. Talking point: "The error is trend acceleration, not a missing event. The factor table captures specific holidays but not anticipation effects."
+- **Design note:** Layer 2 (NLP) fills the gap that Layer 1 (rules) misses. No holiday in the factor table, but FAISS retrieves relevant news about the pre-Christmas travel surge. Takeaway: "The error is trend acceleration, not a missing event. The factor table captures specific holidays but not anticipation effects."
 - **Latency:** 0.05s
 
 ### Mode 1 Summary
@@ -91,7 +91,7 @@ The ReAct approach is 50-100x cheaper and 3-5x faster than traditional full-LLM 
 
 ---
 
-## Design Decisions and Talking Points
+## Design Decisions
 
 ### "Why not LangGraph or full ReAct?"
 "LangGraph shines with conditional branching, retries, and multi-agent loops. Our pipeline is linear: forecast → events → news → action. Adding a framework where functions suffice signals over-engineering."

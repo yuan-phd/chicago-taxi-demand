@@ -25,7 +25,7 @@ Path("outputs").mkdir(exist_ok=True)
 
 # ── 1. Load and merge ───────────────────────────────────────────────
 print("Loading data...")
-taxi = pd.read_csv("data/from_assignment/area_week.csv")
+taxi = pd.read_csv("data/baseline/area_week.csv")
 tnp = pd.read_csv("data/external/tnp_area_week.csv")
 
 # Standardize columns
@@ -163,7 +163,7 @@ print("=" * 60)
 
 def trend_seasonal_forecast(train_trips, train_weeks, test_weeks):
     """
-    Multiplicative trend × seasonal (same method as assignment).
+    Multiplicative trend × seasonal (same method as the weekly baseline).
     train_trips: array of weekly trip counts
     train_weeks: array of iso_week (1-52) for training period
     test_weeks: array of iso_week (1-52) for test period

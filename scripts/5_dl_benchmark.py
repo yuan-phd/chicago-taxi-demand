@@ -188,12 +188,12 @@ print("=" * 60)
 test_weeks = test[["iso_year", "iso_week"]].values
 results = []
 
-# Weekly baseline (from assignment)
+# Weekly baseline (from the baseline analysis)
 results.append({
     "model": "Trend × seasonal (weekly baseline)",
     "granularity": "Weekly",
     "weekly_mape": 6.01,
-    "source": "Assignment",
+    "source": "Baseline",
 })
 
 results.append({
@@ -266,7 +266,7 @@ Notes:
   - TimesFM: zero-shot (no training on NNS data), rolling 7-day horizon
   - N-BEATS: trained on NNS daily data only, rolling 7-day via cross_validation
   - Naive lag-7: predict each day as same weekday last week
-  - Weekly baseline: multiplicative trend × 52 seasonal factors (from assignment)
+  - Weekly baseline: multiplicative trend × 52 seasonal factors (from the baseline analysis)
 """)
 
 # ── Save ─────────────────────────────────────────────────────────────

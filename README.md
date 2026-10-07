@@ -29,7 +29,7 @@ gitignored). Without it, the analysis tab and all 6 action cards still work.
 - regenerate via `scripts/0_*.py` — note `0_get_gdelt_bq.py` requires BigQuery access, and
   `6_build_faiss.py` rebuilds the FAISS index (~90s).
 
-`data/from_assignment/` holds the tracked baseline CSVs (`area_week`, `backtest_8`,
+`data/baseline/` holds the tracked baseline CSVs (`area_week`, `backtest_8`,
 `forecast_8`); its `raw/` subfolder (~6.5G) is gitignored.
 
 ## App Guide
@@ -44,7 +44,7 @@ gitignored). Without it, the analysis tab and all 6 action cards still work.
 ## Repo Layout
 
 - `config/` — `action_config.json`, thresholds/params for the decision engine.
-- `data/` — `from_assignment/` (baseline), `external/` (weather, sports, holidays, GDELT news,
+- `data/` — `baseline/` (weekly baseline analysis), `external/` (weather, sports, holidays, GDELT news,
   ride-hail), `derived/` (aggregates + the FAISS index).
 - `scripts/` — numbered in pipeline order (`0_*` fetch/aggregate → `8_*` model comparison).
   `0_get_gdelt.py` is **deprecated**, superseded by `0_get_gdelt_bq.py` (BigQuery).

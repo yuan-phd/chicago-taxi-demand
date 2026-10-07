@@ -19,9 +19,9 @@ Is NNS's +30% taxi growth (2024→2026) real demand growth, or mode-share shift 
 
 Total demand grew marginally in year 1 and declined in year 2. Taxi growth is entirely explained by mode-share recapture (9.8% → 11.8% over 2.5 years). Ride-hail dominates NNS at ~236K trips/week vs taxi ~28K — an 8.4:1 ratio. Even small mode-share shifts produce large percentage swings in taxi volumes.
 
-### Reconciliation with Assignment Figures
+### Reconciliation with Baseline Figures
 
-The assignment reported +30.2% like-for-like growth comparing 2024 vs 2026 using W02-W21 (20 weeks). Phase 6 shows +12.9% (2024→2025) and +21.0% (2025→2026), cumulating to approximately +36.6% over two years. The difference (30.2% vs 36.6%) is explained by different week samples. Both are correct. Both are taxi-only.
+The baseline analysis reported +30.2% like-for-like growth comparing 2024 vs 2026 using W02-W21 (20 weeks). Phase 6 shows +12.9% (2024→2025) and +21.0% (2025→2026), cumulating to approximately +36.6% over two years. The difference (30.2% vs 36.6%) is explained by different week samples. Both are correct. Both are taxi-only.
 
 ### Mode-Share Trend
 
@@ -37,7 +37,7 @@ Taxi share is rising steadily. Ride-hail is flat or declining. The taxi growth s
 
 ### O'Hare Reversal
 
-The assignment noted O'Hare taxi declining (-5.2% YoY). Phase 6 shows O'Hare total demand grew +6.2%, with ride-hail up +10.0%. O'Hare is not a declining market — taxis are losing share to ride-hail. This is the mirror image of NNS.
+The baseline analysis noted O'Hare taxi declining (-5.2% YoY). Phase 6 shows O'Hare total demand grew +6.2%, with ride-hail up +10.0%. O'Hare is not a declining market — taxis are losing share to ride-hail. This is the mirror image of NNS.
 
 | Area | Taxi | Ride-hail | Total | Share Δ |
 |------|------|-----------|-------|---------|
@@ -53,7 +53,7 @@ Pattern: taxis are gaining share in urban areas (NNS, Loop, Near West/South Side
 
 | Model | MAPE | Note |
 |-------|------|------|
-| Taxi-only (trend × seasonal) | 6.3% | Standard assignment method |
+| Taxi-only (trend × seasonal) | 6.3% | Standard baseline method |
 | Total demand (trend × seasonal) | 3.9% | More predictable |
 | Derived taxi (total × fixed share) | 10.0% | Fails — share is trending |
 
@@ -61,13 +61,13 @@ Total demand is more predictable (CV 0.106 vs 0.133) because mode-share noise is
 
 ---
 
-## Impact on Assignment Recommendations
+## Impact on Baseline Recommendations
 
 ### What changes
 
 1. **Growth narrative:** NNS taxi growth is mode-share recapture, not market expansion. The underlying market is flat to declining.
 2. **Growth ceiling:** Taxi share cannot increase indefinitely. At 11.8% share (current), there is room to grow, but the ceiling is perhaps 15-20%, not unbounded.
-3. **Competitive framing:** The real competitor is not other taxi companies (HHI was already low in the assignment) but ride-hail. Entry strategy should consider differentiation from ride-hail.
+3. **Competitive framing:** The real competitor is not other taxi companies (HHI was already low in the baseline analysis) but ride-hail. Entry strategy should consider differentiation from ride-hail.
 4. **O'Hare reframing:** Not a declining market. Taxis are losing to ride-hail. An airport strategy should account for ride-hail dominance.
 
 ### What does not change

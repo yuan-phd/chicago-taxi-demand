@@ -103,13 +103,13 @@ TYPICAL_BASELINES = {
 # ══════════════════════════════════════════════════════════════════════
 print("Initializing AI pipeline...")
 
-backtest = pd.read_csv("data/from_assignment/backtest_8.csv")
+backtest = pd.read_csv("data/baseline/backtest_8.csv")
 holidays_df = pd.read_csv("data/external/holidays_chicago.csv")
 holidays_df["date"] = pd.to_datetime(holidays_df["date"])
 conventions_df = pd.read_csv("data/external/conventions_chicago.csv")
 conventions_df["date_start"] = pd.to_datetime(conventions_df["date_start"])
 conventions_df["date_end"] = pd.to_datetime(conventions_df["date_end"])
-taxi_weekly = pd.read_csv("data/from_assignment/area_week.csv")
+taxi_weekly = pd.read_csv("data/baseline/area_week.csv")
 tnp_weekly = pd.read_csv("data/external/tnp_area_week.csv")
 
 import faiss

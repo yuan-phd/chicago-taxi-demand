@@ -9,8 +9,8 @@ Usage: python scripts/0_aggregate_corridors.py <csv_files...>
 
 Example:
   python scripts/0_aggregate_corridors.py \
-    data/from_assignment/raw/taxi_2024_h1.csv \
-    data/from_assignment/raw/taxi_2024_h1b.csv \
+    data/baseline/raw/taxi_2024_h1.csv \
+    data/baseline/raw/taxi_2024_h1b.csv \
     ...
 """
 

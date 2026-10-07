@@ -143,7 +143,7 @@ def load_total_market():
 
 @st.cache_data
 def load_backtest():
-    return pd.read_csv("data/from_assignment/backtest_8.csv")
+    return pd.read_csv("data/baseline/backtest_8.csv")
 
 @st.cache_data
 def load_holidays():
@@ -165,7 +165,7 @@ def load_config():
 
 @st.cache_data
 def load_taxi_weekly():
-    return pd.read_csv("data/from_assignment/area_week.csv")
+    return pd.read_csv("data/baseline/area_week.csv")
 
 @st.cache_data
 def load_tnp_weekly():

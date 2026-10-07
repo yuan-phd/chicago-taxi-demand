@@ -6,7 +6,7 @@
 
 | Dataset | Source | Rows | Purpose |
 |---------|--------|------|---------|
-| area_week.csv | Assignment output | 9,711 | Weekly area-level taxi demand |
+| area_week.csv | Baseline analysis output | 9,711 | Weekly area-level taxi demand |
 | area_day.csv | Raw taxi CSVs (6.9GB) | 67,512 | Daily area-level taxi demand |
 | corridor_day.csv | Raw taxi CSVs | 205,665 | Daily O-D corridor demand |
 | corridor_characteristics.csv | Raw taxi CSVs | 308 | Corridor features (fare, distance, airport) |
@@ -92,7 +92,7 @@ These tables feed directly into Phase 7's insight layer (Layer 1 rule-based expl
 - Trend acceleration confirmed: 2024→2025 taxi growth +12.9%, 2025→2026 taxi growth +21.0% (Phase 6 figures, cross-referenced with ride-hail). Linear trend is too conservative.
 - Lag-1 ACF = 0.463 (significant) — errors persist week-to-week.
 
-### Talking point
+### Key takeaway
 
 "I tested every plausible external signal — weather, sports, holidays, conventions, payday effects. Two worked, three didn't. Knowing what NOT to include is as important as what to include. The rejected features save the model from fitting noise. The validated features — holidays and conventions — became the foundation for the insight layer."
 
@@ -128,7 +128,7 @@ The difference isn't the model — it's the data regime. ML's advantage scales w
 
 ### Methodological lesson
 
-After v1 showed 6.10% (matching baseline), three more iterations tried to make it work. The right approach: check if something CAN work before iterating on HOW to make it work. This is a Senior DS judgment call — knowing when to stop and reframe is more valuable than incremental optimization.
+After v1 showed 6.10% (matching baseline), three more iterations tried to make it work. The right approach: check if something CAN work before iterating on HOW to make it work. Knowing when to stop and reframe is more valuable than incremental optimization.
 
 ### What Phase 3 produced that fed later phases
 
@@ -137,7 +137,7 @@ After v1 showed 6.10% (matching baseline), three more iterations tried to make i
 3. **"Weekly decomposition is near-optimal at this density" finding** — frames the DL benchmark (Phase 4) and the cross-corridor argument (Phase 5)
 4. **DOW pattern quantification** — 40% daily swing, confirmed as the dominant signal at daily granularity
 
-### Talking point
+### Key takeaway
 
 "I ran several iterations trying to beat 6% with daily ML. None succeeded. The right conclusion wasn't 'try harder' — it was 'change the data regime.' With 882 rows on one series, simple methods win. With 94,000 rows across 183 corridors, ML reduces MAPE by 47% (18.2%→9.7%; MAE 407→271). Phase 3's failure is what makes Phase 5's success credible — I proved the boundary between where simple methods win and where ML takes over."
 

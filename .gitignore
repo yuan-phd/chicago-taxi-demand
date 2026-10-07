@@ -15,7 +15,7 @@ Thumbs.db
 # IDE
 .idea/
 .vscode/
-data/from_assignment/raw/
+data/baseline/raw/
 
 # Large generated/fetched data — regenerate via scripts/0_*.py or copy from source machine
 data/external/*
