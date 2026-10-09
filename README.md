@@ -46,10 +46,12 @@ gitignored). Without it, the analysis tab and all 6 action cards still work.
 - `config/` — `action_config.json`, thresholds/params for the decision engine.
 - `data/` — `baseline/` (weekly baseline analysis), `external/` (weather, sports, holidays, GDELT news,
   ride-hail), `derived/` (aggregates + the FAISS index).
-- `scripts/` — numbered in pipeline order (`0_*` fetch/aggregate → `8_*` model comparison).
+- `scripts/` — numbered in pipeline order (`0_*` fetch/aggregate → `8_*` model comparison;
+  `9_readme_figures.py` regenerates the README figures).
   `0_get_gdelt.py` is **deprecated**, superseded by `0_get_gdelt_bq.py` (BigQuery).
 - `outputs/` — benchmark CSVs and pipeline JSON results.
-- `slides/` — per-phase conclusions (`phase1_3` … `phase7_8`), the narrative writeup.
+- `slides/` — per-phase conclusions (`phase1_3` … `phase7_8`), the narrative writeup, and the
+  README figures (`fig_*.png`).
 
 ## Key Results
 
@@ -59,5 +61,15 @@ gitignored). Without it, the analysis tab and all 6 action cards still work.
 | Global XGBoost, daily, dense corridors | **47% MAPE reduction** (18.2%→9.7%; MAE 407→271) |
 | Cold-start new routes (weeks 1–4) | **TimesFM zero-shot**, ~8% MAPE from day one |
 | Deterministic decision pipeline | **<0.1s, $0 (no API)** — two orders of magnitude faster than full-LLM |
+
+**On a single dense series, simple methods win.** No ML or deep-learning model beats the
+classical weekly decomposition:
+
+![Single-series forecasting benchmark](slides/fig_single_series_benchmark.png)
+
+**Across 183 corridors, ML wins.** One global XGBoost model trained on all corridors at daily
+granularity beats the baseline in every density tier, and the gain is largest where data is densest:
+
+![Global XGBoost vs baseline by corridor tier](slides/fig_corridor_global_xgb.png)
 
 See `PROJECT_SUMMARY.md` and `slides/` for the full narrative.
