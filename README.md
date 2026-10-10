@@ -7,6 +7,17 @@ feed a deterministic decision engine that turns them into revenue-valued actions
 
 Built on **16M Chicago taxi trips (2024–2026)**.
 
+## What the Demo Shows
+
+A Streamlit app with two tabs:
+
+- **Tab 1 — Analysis:** the forecasting benchmark (classical / ML / DL), corridor-level
+  global model, total-market view, and feature validation (which signals actually predict
+  demand).
+- **Tab 2 — Decision Engine:** 6 data-validated action cards (DEMAND_DROP, RESOURCE_OPTIMIZE,
+  DEMAND_SURGE, COMPETITIVE_SHIFT, GROWTH_THRESHOLD, ANOMALY_ESCALATION) plus a ReAct chatbot
+  that reasons over the same tools.
+
 ## Key Results
 
 | Result | Number |
@@ -27,17 +38,6 @@ granularity beats the baseline in every density tier, and the gain is largest wh
 ![Global XGBoost vs baseline by corridor tier](slides/fig_corridor_global_xgb.png)
 
 The full narrative is in `PROJECT_SUMMARY.md`, with per-phase write-ups in `slides/`.
-
-## What the Demo Shows
-
-A Streamlit app with two tabs:
-
-- **Tab 1 — Analysis:** the forecasting benchmark (classical / ML / DL), corridor-level
-  global model, total-market view, and feature validation (which signals actually predict
-  demand).
-- **Tab 2 — Decision Engine:** 6 data-validated action cards (DEMAND_DROP, RESOURCE_OPTIMIZE,
-  DEMAND_SURGE, COMPETITIVE_SHIFT, GROWTH_THRESHOLD, ANOMALY_ESCALATION) plus a ReAct chatbot
-  that reasons over the same tools.
 
 ---
 
